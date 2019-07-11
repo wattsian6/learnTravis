@@ -1,5 +1,17 @@
 <project name = "Hello World Project" default = "info">
-   <target name = "info">
+   <target name = "test">
       <echo>Hello World - Welcome to Apache Ant!</echo>
    </target>
+<target name = "help">
+      	<echo>Just starting with make? Try these 4 make commands successively:</echo>
+	<echo>________ make clean ; make compile ; make test ; make defchk</echo>
+   </target>
+
+<target name = "targetlist">
+      	<echo>7 available targets: clean - removes editor tmpfiles and .class files</echo>
+	<echo>____________________ compile, test - builds JUnit5 tests, runs all (4 and 5)</echo>
+	<echo>____________________ compile4, test4 - builds/runs JUnit4 tests</echo>
+	<echo>____________________ defchk, customchk - default or custom checkstyle</echo>
+   </target>
+
 </project>
